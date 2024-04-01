@@ -16,8 +16,6 @@ const FilePicker = ({ file, setFile, readFile }) => {
           id="file-upload"
           type="file"
           accept="image/*"
-          /* The `onChange` event handler in the `input` element is responsible for updating the `file` state
-            when a file is selected by the user. */
           onChange={(e) => setFile(e.target.files[0])}
         />
         <label htmlFor="file-upload" className="filepicker-label">
